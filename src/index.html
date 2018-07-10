@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <script src="./node_modules/web3/dist/web3.min.js"></script>
+
+</head>
+
+<style>
+  body {
+    background-color: #F0F0F0;
+    padding: 2em;
+    font-family: 'Raleway', 'Source Sans Pro', 'Arial';
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .outputContainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input {
+    padding: 10px;
+    width: 82%;
+    margin-bottom: 2em;
+  }
+
+  #addButton {
+    width: 160px;
+    height: 40px;
+  }
+
+  #subButton {
+    width: 160px;
+    height: 40px;
+  }
+
+  #mulButton {
+    width: 160px;
+    height: 40px;
+  }
+
+  #divButton {
+    width: 160px;
+    height: 40px;
+  }
+</style>
+
+<body>
+  <div class="container">
+
+    <h1>Sample Calculator</h1>
+
+    <label for="name" class="col-lg-2 control-label">First Value</label>
+    <input id="input1" type="text">
+
+    <label for="name" class="col-lg-2 control-label">Second Value</label>
+    <input id="input2" type="text">
+
+    <button id="addButton" onclick="checkInput(this);">Perform Addition</button>
+    <button id="subButton" onclick="checkInput(this);">Perform Substraction</button>
+    <button id="mulButton" onclick="checkInput(this);">Perform Multiplication</button>
+    <button id="divButton" onclick="checkInput(this);">Perform Division</button>
+  </div>
+  </br>
+  <div class="outputContainer">
+    <label for="name" class="col-lg-2 control-label">Output</label>
+    <input id="output" type="text"> </br>
+    <button id="reset" style="height: 40px;" onclick="clearInput();">Reset Values</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/web3.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
